@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CAT-ENERGY-FORM</title>
   </head>
   <body>
     <header class="page-header">
@@ -24,13 +24,75 @@
             <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" active-link>Подбор программы</a>
+            <a class="nav-list__link active-link">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-content">
-      <!--Main-content-->
+      <section class="page-content__main-form">
+        <h2 class="page-content__main-form__title">Подбор программы</h2>
+        <form class="page-content__main-form__list form-list" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-list__worksheet">
+            <p class="form-list__worksheet__description">запоните анкету и мы подберем программу питания для вашего кота</p>
+            <label class="form-list__worksheet__label" for="name">Имя:*</label>
+            <input class="form-list__worksheet__name" type="text" name="name" id="name" placeholder="Барсик" required>
+            <label for="weight">Вес (КГ):*</label>
+            <input class="form-list__worksheet__weight" name="weight" id="weight" placeholder="7" required>
+            <label for="age">Возраст (лет):*</label>
+            <input class="form-list__worksheet__age" name="age" id="age" placeholder="7">
+          </div>
+          <div class="form-list__program">
+            <label class="form-list__program radio-list">
+              <input class="radio-list_item" type="radio" name="program" value="slim" checked>
+              <span class="radio-list__icon"></span>
+              Похудение
+            </label>
+            <label class="form-list__program radio-list">
+              <input class="radio-list_item" type="radio" name="program" value="pro">
+              <span class="radio-list__icon"></span>
+              Набор массы
+            </label>
+            <label class="form-list__program radio-list">
+              <input class="radio-list_item" type="radio" name="program" value="unknown">
+              <span class="radio-list__icon"></span>
+              Не знаю (нужен ваш совет)
+            </label>
+          </div>
+          <div class="form-list__contacts">
+            <h2 class="form-list__contacts__title">Контактные данные (владельца кота)</h2>
+            <label class="form-list__contacts__email" for="email">e-mail:*</label>
+            <input class="form-list__contacts__email-enter" type="email" name="email" id="email" placeholder="Kuklachev@gmail.com" required>
+            <label class="form-list__contacts__number">Телефон:*</label>
+            <input class="form-list__contacts__number-enter" type="number" name="number" id="number" placeholder="8 (960) 900-60-90" required>
+          </div>
+          <div class="form-list__comments">
+            <h2 class="form-list__comments__title">Комментарий</h2>
+            <textarea class="form-list__comments__content" rows="5" cols="15" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+          <div class="form-list__add">
+            <h2 class="form-list__add__title add-list">Дополнительно</h2>
+            <label class="add-list__item">
+              <input type="checkbox" name="sweetener" value="sweetener" checked>
+              Сахарозаменитель
+            </label>
+            <label class="add-list__item">
+              <input type="checkbox" name="water" value="water" >
+              Питьевая вода
+            </label>
+            <label class="add-list__item">
+              <input type="checkbox" name="milk" value="milk">
+              Молоко
+            </label>
+            <label class="add-list__item">
+              <input type="checkbox" name="vitamins" value="vitamins">
+              Витамины
+            </label>
+          </div>
+          <button class="button form-list__button" type="submit">Отправить заявку</button>
+          <p class="button form-list__required">*-Обязательные поля</p>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__contacts">
