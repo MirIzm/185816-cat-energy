@@ -36,71 +36,71 @@
       </section>
     </header>
     <main class="page-content">
-      <section class="page-content__main-form">
-        <h2 class="page-content__main-form__title">Подбор программы</h2>
-        <form class="page-content__main-form__list form-list" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form-list__worksheet">
-            <p class="form-list__worksheet__description">запоните анкету и мы подберем программу питания для вашего кота</p>
-            <label class="form-list__worksheet__label" for="name">Имя:*</label>
-            <input class="form-list__worksheet__name" type="text" name="name" id="name" placeholder="Барсик" required>
-            <label for="weight">Вес (КГ):*</label>
-            <input class="form-list__worksheet__weight" name="weight" id="weight" placeholder="7" required>
-            <label for="age">Возраст (лет):*</label>
-            <input class="form-list__worksheet__age" name="age" id="age" placeholder="7">
+      <section class="main-form">
+        <h2 class="main-form__title">Подбор программы</h2>
+        <form class="main-form__list form-list" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-list__worksheet work-list">
+            <p class="work-list__description">запоните анкету и мы подберем программу питания для вашего кота</p>
+            <label class="work-list__label" for="name">Имя:*</label>
+            <input class="work-list__name" type="text" name="name" id="name" placeholder="Барсик" required>
+            <label class="work-list__label" for="weight">Вес (КГ):*</label>
+            <input class="work-list__weight" name="weight" id="weight" placeholder="7" required>
+            <label class="work-list__label" for="age">Возраст (лет):*</label>
+            <input class="work-list__age" name="age" id="age" placeholder="7">
           </div>
-          <div class="form-list__program">
-            <label class="form-list__program radio-list">
-              <input class="radio-list__item" type="radio" name="program" value="slim" checked>
-              <span class="radio-list__icon"></span>
+          <div class="form-list__program program-list">
+            <label class="program-list__element ">
+              <input class="program-list__item" type="radio" name="program" value="slim" checked>
+              <span class="program-list__icon"></span>
               Похудение
             </label>
-            <label class="form-list__program radio-list">
-              <input class="radio-list__item" type="radio" name="program" value="pro">
-              <span class="radio-list__icon"></span>
+            <label class="program-list__element">
+              <input class="program-list__item" type="radio" name="program" value="pro">
+              <span class="program-list__icon"></span>
               Набор массы
             </label>
-            <label class="form-list__program radio-list">
-              <input class="radio-list__item" type="radio" name="program" value="unknown">
-              <span class="radio-list__icon"></span>
+            <label class="program-list__element">
+              <input class="program-list__item" type="radio" name="program" value="unknown">
+              <span class="program-list__icon"></span>
               Не знаю (нужен ваш совет)
             </label>
           </div>
-          <div class="form-list__contacts">
-            <h2 class="form-list__contacts__title">Контактные данные (владельца кота)</h2>
-            <label class="form-list__contacts__email" for="email">e-mail:*</label>
-            <input class="form-list__contacts__email-enter" type="email" name="email" id="email" placeholder="Kuklachev@gmail.com" required>
-            <label class="form-list__contacts__number">Телефон:*</label>
-            <input class="form-list__contacts__number-enter" type="number" name="number" id="number" placeholder="8 (960) 900-60-90" required>
+          <div class="form-list__contacts contact-list">
+            <h2 class="contact-list__title">Контактные данные (владельца кота)</h2>
+            <label class="contact-list__email" for="email">e-mail:*</label>
+            <input class="contact-list__email-enter" type="email" name="email" id="email" placeholder="Kuklachev@gmail.com" required>
+            <label class="contact-list__number">Телефон:*</label>
+            <input class="contact-list__number-enter" type="number" name="number" id="number" placeholder="8 (960) 900-60-90" required>
           </div>
-          <div class="form-list__comments">
-            <h2 class="form-list__comments__title">Комментарий</h2>
-            <textarea class="form-list__comments__content" rows="5" cols="15" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="form-list__comments comment-list">
+            <h2 class="comment-list__title">Комментарий</h2>
+            <textarea class="comment-list__content" rows="5" cols="15" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
-          <div class="form-list__add">
-            <h2 class="form-list__add__title add-list">Дополнительно</h2>
-            <label class="add-list__item">
-              <input class="add-list__item__enter" type="checkbox" name="sweetener" value="sweetener" checked>
-              <span class="add-list__item__icon"></span>
+          <div class="form-list__add add-list">
+            <h2 class="add-list__title">Дополнительно</h2>
+            <label class="add-list__element">
+              <input class="add-list__checkbox" type="checkbox" name="sweetener" value="sweetener" checked>
+              <span class="add-list__icon"></span>
               Сахарозаменитель
             </label>
-            <label class="add-list__item">
-              <input class="add-list__item__enter" type="checkbox" name="water" value="water">
-              <span class="add-list__item__icon"></span>
+            <label class="add-list__element">
+              <input class="add-list__checkbox" type="checkbox" name="water" value="water">
+              <span class="add-list__icon"></span>
               Питьевая вода
             </label>
-            <label class="add-list__item">
-              <input class="add-list__item__enter" type="checkbox" name="milk" value="milk">
-              <span class="add-list__item__icon"></span>
+            <label class="add-list__element">
+              <input class="add-list__checkbox" type="checkbox" name="milk" value="milk">
+              <span class="add-list__icon"></span>
               Молоко
             </label>
-            <label class="add-list__item">
-              <input class="add-list__item__enter" type="checkbox" name="vitamins" value="vitamins">
-              <span class="add-list__item__icon"></span>
+            <label class="add-list__element">
+              <input class="add-list__checkbox" type="checkbox" name="vitamins" value="vitamins">
+              <span class="add-list__icon"></span>
               Витамины
             </label>
           </div>
-          <button class="button form-list__button" type="submit">Отправить заявку</button>
-          <p class="button form-list__required">*-Обязательные поля</p>
+          <button class="form-list__buttons" type="submit">Отправить заявку</button>
+          <p class="form-list__required">*-Обязательные поля</p>
         </form>
       </section>
     </main>
