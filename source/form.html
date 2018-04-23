@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__image" src="logo.svg" width="125" height="125" alt="cat-energy">
-      </a>
-      <a class="page-header__logo-name">
-        <p class="page-header__fill">
-          <span class="page-header__bold">Cat</span>energy
-        </p>
+        <img class="page-header__image" src="img/logo-mobile.svg" width="220" height="42" alt="cat-energy">
       </a>
       <button class="page-header__button" type="button">
         <span class="visually-hidden">Главное меню</span>
@@ -30,12 +26,6 @@
           </li>
         </ul>
       </nav>
-      <section class="promo">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
-        <p class="promo__description">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="cat-enrgy.svg" width="150" height="300" alt="Cat energy pro">
-        <button class="promo__button">Подобрать программу</button>
-      </section>
     </header>
     <main class="page-content">
       <section class="main-form">
@@ -53,30 +43,34 @@
           <div class="form-list__program program-list">
             <label class="program-list__element ">
               <input class="program-list__item" type="radio" name="program" value="slim" checked>
-              <span class="program-list__icon">Похудение</span>
+              <span class="program-list__icon visually-hidden">Похудение</span>
               Похудение
             </label>
             <label class="program-list__element">
               <input class="program-list__item" type="radio" name="program" value="pro">
-              <span class="program-list__icon">Набор мыссы</span>
+              <span class="program-list__icon visually-hidden">Набор мыссы</span>
               Набор массы
             </label>
             <label class="program-list__element">
               <input class="program-list__item" type="radio" name="program" value="unknown">
-              <span class="program-list__icon">Не знаю</span>
+              <span class="program-list__icon visually-hidden">Не знаю</span>
               Не знаю (нужен ваш совет)
             </label>
           </div>
           <div class="form-list__contacts contact-list">
             <h2 class="contact-list__title">Контактные данные (владельца кота)</h2>
-            <label class="contact-list__email" for="email">e-mail:*</label>
-            <input class="contact-list__email-enter" type="email" name="email" id="email" placeholder="Kuklachev@gmail.com" required>
-            <label class="contact-list__number">Телефон:*</label>
-            <input class="contact-list__number-enter" type="number" name="number" id="number" placeholder="8 (960) 900-60-90" required>
+            <div class="contact-list__email-wrapper">
+              <label class="contact-list__email" for="email">e-mail:*</label>
+              <input class="contact-list__email-enter" type="email" name="email" id="email" placeholder="Kuklachev@gmail.com" required>
+            </div>
+            <div class="contact-list__number-wrapper">
+              <label class="contact-list__number">Телефон:*</label>
+              <input class="contact-list__number-enter" type="number" name="number" id="number" placeholder="8 (960) 900-60-90" required>
+            </div>
           </div>
           <div class="form-list__comments comment-list">
             <h2 class="comment-list__title">Комментарий</h2>
-            <textarea class="comment-list__content" rows="5" cols="15" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="comment-list__content" rows="5" cols="25" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <div class="form-list__add add-list">
             <h2 class="add-list__title">Дополнительно</h2>
@@ -108,16 +102,14 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__contacts">
-        <p class="page-footer__cooperation">Приглашаем к сотрудничеству</p>
+        <p class="page-footer__cooperation">Приглашаем к сотрудничеству диллеров!</p>
         <p class="page-footer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <div class="page-footer__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210.07720519624945!2d30.323059070626993!3d59.93873855463829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523772194147"  allowfullscreen></iframe>
+        <iframe class="page-footer__address-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.299557663316!2d30.323083!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524409036407" allowfullscreen></iframe>
       </div>
       <a class="page-footer__logo-name">
-        <p class="page-footer__fill">
-          <span class="page-footer__bold">Cat</span>energy
-        </p>
+        <img src="img/logo-footer.svg" width="132" height="30">
       </a>
       <ul class="page-footer__social social-list">
         <li class="social-list__item">
@@ -138,7 +130,7 @@
       </ul>
       <div class="page-footer__development">
         <a class="page-footer__link-academy" href="https://up.htmlacademy.ru/adaptive/14">HTML academy</a>
-        <img class="page-footer__logo-academy" src="html-logo.svg" width="25" height="25" alt="HTML academy">
+        <img class="page-footer__logo-academy" src="img/htmlacademy.svg" width="28" height="35" alt="HTML academy">
       </div>
     </footer>
   </body>
