@@ -27,3 +27,23 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: 700px) {
+  .main-nav {
+    width: 516px;
+  }
+  .nav-list {
+    text-align: center;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+      border-top: none;
+    }
+  }
+}

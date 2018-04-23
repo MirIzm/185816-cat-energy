@@ -1,3 +1,22 @@
 .page-header {
   background-color: white;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .page-header {
+    width: 708px;
+    padding: 0 30px;
+
+    &__button {
+      display: none;
+    }
+
+    &__wrapper-menu {
+      width: 708px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
