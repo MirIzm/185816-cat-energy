@@ -68,3 +68,51 @@
     text-align: center;
   }
 }
+/*----Tablet version----*/
+@media (min-width: 700px) {
+  .example {
+    width: 708px;
+    padding: 0 30px;
+    background-image: linear-gradient(to bottom, white 55%, #f2f2f2 55%);
+
+    &__wrapper {
+      width: 708px;
+    }
+
+    &__title {
+      margin-bottom: 70px;
+    }
+
+    &__content {
+      width: 708px;
+      margin-bottom: 57px;
+    }
+
+    &__results {
+      width: 384px;
+      float: left;
+    }
+
+    &__summ {
+      float: right;
+    }
+
+    &__live-wrapper {
+      width: 708px;
+      clear: both;
+    }
+
+    &__slider {
+      width: 708px;
+    }
+  }
+
+  .slider-elem {
+    &__before,
+    &__after {
+      font-family: "Oswald", sans-serif;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
