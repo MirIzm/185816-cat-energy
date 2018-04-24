@@ -69,6 +69,7 @@
 
   &__add-products {
     width: 280px;
+    margin: 0 auto;
   }
 }
 
@@ -113,3 +114,34 @@
     text-decoration: none;
   }
 }
+/*----Tablet version----*/
+@media (min-width: 700px) {
+  .main-products {
+    width: 768px;
+
+    &__title {
+      width: 708px;
+      padding: 0 30px;
+      border-top: none;
+      border-bottom: none;
+    }
+
+    &__catalog {
+      width: 708px;
+      padding: 0 30px;
+    }
+  }
+
+  .catalog-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 244px;
+      padding: 40px;
+      border: none;
+    }
+  }
+}
+

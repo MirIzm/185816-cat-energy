@@ -27,11 +27,11 @@
     text-transform: uppercase;
   }
 }
-
+/*----Tablet version----*/
 @media (min-width: 700px) {
   .main-nav {
     width: 516px;
-    padding-left: 80px;
+    margin-left: auto;
   }
 
   .nav-list {
@@ -42,10 +42,16 @@
     font-weight: 400;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     &__item {
       border-top: none;
+      margin-left: 25px;
     }
+  }
+}
+/*----Desktop version----*/
+@media (min-width: 1200px) {
+  .main-nav {
+    margin-left: auto;
   }
 }

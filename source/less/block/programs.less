@@ -1,10 +1,12 @@
 .programs {
-  padding: 0 20px;
+  margin: 0 auto;
+  width: 280px;
   margin-bottom: 25px;
   min-height: 580px;
 
   &__wrapper {
     width: 280px;
+    margin: 0 auto;
   }
 
   &__list {
@@ -59,8 +61,7 @@
 /*----Tablet version----*/
 @media (min-width: 700px) {
   .programs {
-    width: 708px;
-    padding: 0 30px;
+    width: 768px;
     margin: 0 auto;
 
     &__wrapper {
@@ -86,3 +87,26 @@
 }
 
 /*----Desktop version----*/
+@media (min-width: 1200px) {
+  .programs {
+    width: 1440px;
+    min-height: 500px;
+
+    &__wrapper {
+      width: 1260px;
+    }
+
+    &__list {
+      width: 1260px;
+      padding: 0 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 530px;
+      min-height: 372px;
+    }
+  }
+}
