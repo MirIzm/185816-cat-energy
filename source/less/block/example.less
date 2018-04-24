@@ -1,5 +1,4 @@
 .example {
-  padding: 0 20px;
   background-color: #f2f2f2;
   width: 280px;
   min-height: 705px;
@@ -73,13 +72,13 @@
 /*----Tablet version----*/
 @media (min-width: 700px) {
   .example {
-    width: 708px;
-    padding: 0 30px;
+    width: 768px;
     margin: 0 auto;
     background-image: linear-gradient(to bottom, white 55%, #f2f2f2 55%);
 
     &__wrapper {
       width: 708px;
+      margin: 0 auto;
     }
 
     &__title {
@@ -121,3 +120,15 @@
 }
 
 /*----Tablet version----*/
+@media (min-width: 1200px) {
+  .example {
+    width: 1400px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, white 55%, #f2f2f2 55%);
+
+    &__wrapper {
+      width: 1220px;
+      margin: 0 auto;
+    }
+  }
+}
