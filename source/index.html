@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/normalize-min.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
@@ -31,8 +32,10 @@
       </div>
       <section class="promo">
         <div class="promo__wrapper">
-          <h2 class="promo__title">Функциональное питание для котов</h2>
-          <p class="promo__description">Занялся собой? Займись котом!</p>
+          <div class="promo__wrapper-content">
+            <h2 class="promo__title">Функциональное питание для котов</h2>
+            <p class="promo__description">Занялся собой? Займись котом!</p>
+          </div>
           <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Cat energy pro">
           <a class="promo__button">Подобрать программу</a>
         </div>
@@ -96,28 +99,30 @@
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__results-wrapper">
-            <ul class="example__results results-list">
-              <li class="results-list__item">
-                <p class="results-list__fill">5&nbsp;кг</p>
-                <span class="results-list__description">Снижение веса</span>
-              </li>
-              <li class="results-list__item">
-                <p class="results-list__fill">60&nbsp;дней</p>
-                <span class="results-list__description">Затраччено времени</span>
-              </li>
-            </ul>
-            <p class="example__summ">Затраты на питание: 15000 руб.</p>
-          </div>
-          <div class="example__live-wrapper">
-            <img class="example__live-example" src="img/before-mobile@1x.png" width="280" height="240" alt="Кот Борис">
-          </div>
-          <div class="example__slider slider-elem">
-            <button class="slider-elem__before" type="button">Было</button>
-            <div class="slider-elem__fill">
-              <span class="slider-elem__indicator slider-elem__green--indicator"></span>
+          <div class="example__results-wrapper-desk">
+            <div class="example__results-wrapper">
+              <ul class="example__results results-list">
+                <li class="results-list__item">
+                  <p class="results-list__fill">5&nbsp;кг</p>
+                  <span class="results-list__description">Снижение веса</span>
+                </li>
+                <li class="results-list__item">
+                  <p class="results-list__fill">60&nbsp;дней</p>
+                  <span class="results-list__description">Затраччено времени</span>
+                </li>
+              </ul>
+              <p class="example__summ">Затраты на питание: 15000 руб.</p>
             </div>
-            <button class="slider-elem__after" type="button">Стало</button>
+            <div class="example__live-wrapper">
+              <img class="example__live-example" src="img/before-mobile@1x.png" width="280" height="240" alt="Кот Борис">
+            </div>
+            <div class="example__slider slider-elem">
+              <button class="slider-elem__before" type="button">Было</button>
+              <div class="slider-elem__fill">
+                <span class="slider-elem__indicator slider-elem__green--indicator"></span>
+              </div>
+              <button class="slider-elem__after" type="button">Стало</button>
+            </div>
           </div>
         </div>
       </section>

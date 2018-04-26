@@ -1,6 +1,6 @@
 .example {
   background-color: #f2f2f2;
-  width: 280px;
+  width: 320px;
   min-height: 705px;
   margin: 0 auto;
 
@@ -94,6 +94,7 @@
       display: flex;
     }
 
+
     &__live-wrapper {
       width: 708px;
       clear: both;
@@ -117,13 +118,18 @@
 /*----Tablet version----*/
 @media (min-width: 1200px) {
   .example {
-    width: 1400px;
-    margin: 0 auto;
+    width: 1300px;
+    min-height: 588px;
     background-image: linear-gradient(to bottom, white 55%, #f2f2f2 55%);
 
     &__wrapper {
       width: 1220px;
-      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    &__results-wrapper-desk {
+      display: flex;
+      align-items: center;
     }
   }
 }
