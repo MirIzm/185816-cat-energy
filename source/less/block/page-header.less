@@ -1,3 +1,42 @@
 .page-header {
   background-color: white;
+  width: 320px;
+  margin: 0 auto;
+
+  &__logo {
+    width: 192px;
+    height: 60px;
+  }
+
+  &__wrapper-menu {
+    width: 280px;
+  }
+}
+/*----Tablet version----*/
+@media (min-width: 700px) {
+  .page-header {
+    width: 768px;
+
+    &__button {
+      display: none;
+    }
+
+    &__wrapper-menu {
+      width: 708px;
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+/*----Desktop version----*/
+@media (min-width: 1200px) {
+  .page-header {
+    width: 1220px;
+    padding: 0 40px;
+
+    &__wrapper-menu {
+      width: 1220px;
+    }
+  }
 }

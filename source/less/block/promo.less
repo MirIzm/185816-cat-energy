@@ -1,13 +1,13 @@
 .promo {
+  width: 320px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 25px;
 
   &__wrapper {
     width: 280px;
     min-height: 500px;
+    padding: 0 20px;
   }
 
   &__title {
@@ -41,5 +41,49 @@
     border: none;
     padding: 12px 0;
     cursor: pointer;
+  }
+}
+
+@media (min-width: 700px) {
+  .promo {
+    width: 708px;
+    background-image: none;
+    padding: 0 30px;
+
+    &__wrapper {
+      width: 708px;
+      padding: 0;
+    }
+
+    &__title {
+      color: black;
+    }
+
+    &__description {
+      color: black;
+    }
+  }
+}
+/*----Desktop version----*/
+@media (min-width: 1200px) {
+  .promo {
+    width: 1220px;
+    box-sizing: border-box;
+
+    &__wrapper {
+      width: 1220px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &__title {
+      width: 414px;
+      margin-left: 80px;
+    }
+
+    &__button {
+      width: 250px;
+    }
   }
 }

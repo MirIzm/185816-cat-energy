@@ -1,11 +1,13 @@
 .page-footer {
   width: 320px;
+  margin: 0 auto;
   min-height: 115px;
   background-color: #f2f2f2;
 
   &__contacts {
     width: 280px;
     display: flex;
+    justify-content: space-between;
     padding: 0 20px;
   }
 
@@ -13,6 +15,8 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    margin: 0;
+    min-height: 100px;
   }
 
   &__address {
@@ -20,6 +24,8 @@
     font-size: 14px;
     font-weight: 400;
     color: #858585;
+    margin: 0;
+    min-height: 100px;
   }
 
   &__map {
@@ -52,7 +58,6 @@
   }
 
   &__link-academy {
-    padding: 52px 0;
     margin-right: 130px;
     display: inline-block;
     color: black;
@@ -74,4 +79,99 @@
   min-height: 62px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+}
+
+/*----Tablet version----*/
+@media (min-width: 700px) {
+  .page-footer {
+    width: 768px;
+
+    &__contacts {
+      width: 708px;
+      padding: 0 30px;
+      padding-top: 65px;
+      min-height: 135px;
+    }
+
+    &__cooperation {
+      padding-left: 42px;
+      width: 160px;
+    }
+
+    &__address {
+      padding-right: 42px;
+      width: 160px;
+      text-align: right;
+    }
+
+    &__map {
+      width: 100%;
+    }
+
+    &__address-map {
+      width: 100%;
+    }
+
+    &__group {
+      width: 708px;
+      padding: 0 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__logo-name {
+      margin: 0;
+    }
+
+    &__social {
+      margin: 0;
+      width: 150px;
+    }
+
+    &__development {
+      margin: 0;
+    }
+
+    &__link-academy {
+      margin: 0;
+    }
+  }
+}
+
+/*----Desktop version----*/
+@media (min-width: 1200px) {
+  .page-footer {
+    width: 1300px;
+    position: relative;
+
+    &__contacts {
+      width: 570px;
+      padding: 0 30px;
+      padding-top: 65px;
+      min-height: 135px;
+      position: absolute;
+      top: 95px;
+      left: 110px;
+    }
+
+    &__cooperation {
+      padding-left: 42px;
+      width: 160px;
+    }
+
+    &__address {
+      padding-right: 42px;
+      width: 160px;
+      text-align: right;
+    }
+
+    &__map {
+      width: 100%;
+    }
+
+    &__address-map {
+      width: 100%;
+    }
+  }
 }

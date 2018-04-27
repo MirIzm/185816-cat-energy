@@ -1,5 +1,6 @@
 .main-nav {
   background-color: white;
+  width: 320px;
 
   &__list {
     list-style: none;
@@ -25,5 +26,33 @@
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+  }
+}
+/*----Tablet version----*/
+@media (min-width: 700px) {
+  .main-nav {
+    width: 516px;
+    margin-left: auto;
+  }
+
+  .nav-list {
+    text-align: center;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      border-top: none;
+      margin-left: 25px;
+    }
+  }
+}
+/*----Desktop version----*/
+@media (min-width: 1200px) {
+  .main-nav {
+    margin-left: auto;
   }
 }
