@@ -1,4 +1,5 @@
 .main-nav {
+  position: relative;
   background-color: white;
   width: 320px;
 
@@ -7,6 +8,51 @@
     margin: 0;
     padding: 0;
   }
+
+  &__button {
+    position: absolute;
+    top: -40px;
+    right: 19px;
+    width: 24px;
+    height: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+.main-nav--closed .main-nav__button::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  box-shadow: 0 8px 0 0 black,
+    0 16px 0 0 black;
+}
+
+.main-nav--open .main-nav__button::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 5px;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.main-nav--open .main-nav__button::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 5px;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(-45deg);
 }
 
 .nav-list {
