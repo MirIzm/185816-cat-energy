@@ -2,30 +2,33 @@
   width: 320px;
   margin: 0 auto;
   min-height: 115px;
+  padding-bottom: 30px;
   background-color: #f2f2f2;
 
   &__contacts {
     width: 280px;
     display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+    padding: 28px 20px;
   }
 
   &__cooperation {
+    display: block;
+    width: 140px;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     margin: 0;
-    min-height: 100px;
   }
 
   &__address {
+    display: block;
+    width: 140px;
     font-family: "Arial", sans-serif;
     font-size: 14px;
+    line-height: 20px;
     font-weight: 400;
     color: #858585;
     margin: 0;
-    min-height: 100px;
   }
 
   &__map {
@@ -44,27 +47,38 @@
     width: 132px;
     display: flex;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 
   &__social {
     width: 280px;
     margin: 0 auto;
+    margin-bottom: 27px;
   }
 
   &__development {
     width: 280px;
-    padding: 0 20px;
+    padding: 0 18px;
   }
 
   &__link-academy {
-    margin-right: 130px;
+    position: relative;
     display: inline-block;
     color: black;
     text-decoration: none;
     font-family: "Arial", sans-serif;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  &__icon {
+    position: absolute;
+    right: -173px;
+    top: -19px;
+  }
+
+  &__icon path {
+    fill: #444444;
   }
 
   &__contacts--white {
@@ -76,9 +90,30 @@
   list-style: none;
   padding: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 62px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  &__item {
+    width: 20px;
+    height: 20px;
+    margin: 18px;
+    text-align: center;
+  }
+
+  &__link--vkontakte {
+    fill: #6b6b6b;
+  }
+
+  &__link--instagramm path {
+    fill: #6b6b6b;
+  }
+
+  &__link--facebook path {
+    fill: #6b6b6b;
+  }
 }
 
 /*----Tablet version----*/

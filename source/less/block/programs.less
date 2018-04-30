@@ -1,8 +1,7 @@
 .programs {
   margin: 0 auto;
   width: 280px;
-  margin-bottom: 25px;
-  min-height: 580px;
+  margin-bottom: 16px;
 
   &__wrapper {
     width: 280px;
@@ -16,13 +15,17 @@
 
   &__item {
     background-color: #f2f2f2;
-    margin-bottom: 22px;
     padding: 20px;
     width: 240px;
     min-height: 226px;
   }
 
+  &__item:not(:last-of-type) {
+    margin-bottom: 22px;
+  }
+
   &__title {
+    position: relative;
     padding: 0;
     margin: 0;
     font-family: inherit;
@@ -31,8 +34,43 @@
     font-weight: 400;
     text-transform: uppercase;
     margin-left: 72px;
-    margin-top: 15px;
-    margin-bottom: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__img {
+    position: absolute;
+    width: 52px;
+    height: 49px;
+    top: -5px;
+    left: -72px;
+    background-color: #68b738;
+    border-radius: 50%;
+    overflow: visible;
+  }
+
+  &__cat--slim::before {
+    content: "";
+    position: absolute;
+    width: 57px;
+    height: 54px;
+    top: -5px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &__cat--pro::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 54px;
+    top: -5px;
+    left: -10px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
   }
 
   &__content {
@@ -47,7 +85,8 @@
   }
 
   &__link {
-    display: block;
+    position: relative;
+    display: inline-block;
     color: black;
     font-family: inherit;
     font-size: 16px;
@@ -55,6 +94,17 @@
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 16px;
+  }
+
+  &__link::before {
+    position: absolute;
+    content: "";
+    right: -35px;
+    top: 3px;
+    width: 24px;
+    height: 16px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
   }
 }
 /*----Tablet version----*/

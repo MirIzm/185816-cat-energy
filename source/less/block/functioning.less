@@ -1,7 +1,7 @@
 .functioning {
   margin-bottom: 25px;
-  width: 320px;
-  min-height: 420px;
+  width: 280px;
+  padding: 0 20px;
 
   &__wrapper {
     width: 280px;
@@ -10,6 +10,7 @@
   &__title {
     margin: 0;
     padding: 0;
+    margin-bottom: 30px;
     font-family: inherit;
     font-size: 36px;
     line-height: 60px;
@@ -26,7 +27,9 @@
 
 .function-list {
   &__item {
+    position: relative;
     margin-left: 80px;
+    margin-bottom: 26px;
   }
 
   &__content {
@@ -35,6 +38,35 @@
     line-height: 18px;
     font-weight: 400;
     color: #444444;
+  }
+
+  &__content-icon {
+    position: absolute;
+    left: -80px;
+    top: -2px;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+  }
+
+  &__icon--sheet {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: 50% 50%;
+  }
+
+  &__icon--powder {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: 50% 50%;
+  }
+
+  &__icon--food {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: 50% 50%;
+  }
+
+  &__icon--time {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: 50% 50%;
   }
 }
 
