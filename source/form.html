@@ -16,7 +16,7 @@
           <button class="main-nav__button" type="button">
             <span class="visually-hidden">Главное меню</span>
           </button>
-          <ul class="main-nav__list nav-list">
+          <ul class="main-nav__list nav-list visually-hidden">
             <li class="nav-list__item">
               <a class="nav-list__link nav-list__active--link" href="index.html">Главная</a>
             </li>
@@ -36,12 +36,18 @@
         <form class="main-form__list form-list" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-list__worksheet work-list">
             <p class="work-list__description">запоните анкету и мы подберем программу питания для вашего кота</p>
-            <label class="work-list__label" for="name">Имя:*</label>
-            <input class="work-list__name" type="text" name="name" id="name" placeholder="Барсик" required>
-            <label class="work-list__label" for="weight">Вес (КГ):*</label>
-            <input class="work-list__weight" name="weight" id="weight" placeholder="7" required>
-            <label class="work-list__label" for="age">Возраст (лет):*</label>
-            <input class="work-list__age" name="age" id="age" placeholder="7">
+            <div class="work-list__wrap-label">
+              <label class="work-list__label" for="name">Имя:*</label>
+              <input class="work-list__name" type="text" name="name" id="name" placeholder="Барсик" required>
+            </div>
+            <div class="work-list__wrap-label">
+              <label class="work-list__label" for="weight">Вес (КГ):*</label>
+              <input class="work-list__weight" name="weight" id="weight" placeholder="7" required>
+            </div>
+            <div class="work-list__wrap-label">
+              <label class="work-list__label" for="age">Возраст (лет):*</label>
+              <input class="work-list__age" name="age" id="age" placeholder="7">
+            </div>
           </div>
           <div class="form-list__program program-list">
             <label class="program-list__element ">
@@ -68,7 +74,7 @@
             </div>
             <div class="contact-list__number-wrapper">
               <label class="contact-list__number">Телефон:*</label>
-              <input class="contact-list__number-enter" type="number" name="number" id="number" placeholder="8 (960) 900-60-90" required>
+              <input class="contact-list__number-enter" type="tel" name="number" id="number" placeholder="8 (960) 900-60-90" required>
             </div>
           </div>
           <div class="form-list__comments comment-list">
