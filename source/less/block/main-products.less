@@ -31,34 +31,45 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 23px;
     display: flex;
     flex-wrap: wrap;
   }
 
   &__img-wrapper {
+    position: relative;
     width: 140px;
   }
 
   &__content-wrapper {
     width: 140px;
+    min-height: 140px;
+  }
+
+  &__icon-price {
+    position: absolute;
+    top: 0;
+    width: 140px;
+    height: 140px;
   }
 
   &__content {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    margin-bottom: 12px;
   }
 
   &__fill {
     width: 140px;
+    border-collapse: collapse;
   }
 
   &__button {
     width: 100%;
     background-color: #68b738;
     color: white;
-    padding: 12px 0;
+    padding: 10px 0;
     font-family: inherit;
     font-size: 16px;
     line-height: 20px;
@@ -79,18 +90,51 @@
   line-height: 16px;
   font-weight: 400;
   color: #858585;
+
+  &__name:last-of-type {
+    text-align: right;
+  }
 }
 
 .product-list {
-  text-align: center;
-  padding-top: 80px;
-  padding-bottom: 22px;
-  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 25px;
+
+  &__button-add {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 25px;
+  }
+
+  &__button-add::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    top: 15px;
+  }
+
+  &__button-add::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    transform: rotate(90deg);
+    top: 15px;
+  }
 
   &__title {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    margin-bottom: 8px;
   }
 
   &__description {
@@ -98,6 +142,8 @@
     font-size: 12px;
     line-height: 16px;
     color: #858585;
+    margin: 0;
+    margin-bottom: 22px;
   }
 
   &__button {
@@ -106,10 +152,11 @@
     margin: 0 auto;
     background-color: #f2f2f2;
     color: #5b5b5b;
-    padding: 12px 0;
+    padding: 9px 0;
     font-family: inherit;
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
   }
