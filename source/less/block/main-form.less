@@ -11,6 +11,15 @@
     border-top: 1px solid #d9d9d9;
   }
 
+  &__description {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 39px;
+    margin-left: 20px;
+  }
+
   &__list {
     width: 320px;
   }
@@ -33,6 +42,17 @@
     border: none;
     cursor: pointer;
     margin-bottom: 22px;
+    transition: all, 0.3s;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: #5eaa2f;
+  }
+
+  &__button:active {
+    background-color: #5eaa2f;
+    color: #8fc46e;
   }
 
   &__required {
@@ -50,14 +70,6 @@
   width: 280px;
   padding: 0 20px;
   padding-bottom: 10px;
-
-  &__description {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 39px;
-  }
 
   &__label {
     font-size: 16px;
@@ -155,8 +167,9 @@
     background-color: #68b738;
   }
 
-  &__email-wrapper,
-  &__number-wrapper {
+  &__email,
+  &__number {
+    position: relative;
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -166,21 +179,24 @@
     margin-bottom: 15px;
   }
 
-  &__email,
-  &__number {
-    margin-right: 10px;
-  }
-
   &__number-enter,
   &__email-enter {
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
-    width: 100px;
+    width: 140px;
     flex-grow: 1;
     text-transform: uppercase;
     padding: 12px 15px;
+    margin-left: 10px;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: 10px;
   }
 }
 
@@ -301,8 +317,18 @@
     &__title {
       width: 708px;
       padding: 0 30px;
-      margin: 0 auto;
+      margin-top: 55px;
+      margin-bottom: 55px;
       border: none;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__description {
+      width: 100%;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 65px;
     }
   }
 
@@ -318,10 +344,6 @@
 
   .work-list {
     width: 628px;
-
-    &__description {
-      width: 100%;
-    }
   }
 
   .program-list {
