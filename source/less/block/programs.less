@@ -110,7 +110,8 @@
 /*----Tablet version----*/
 @media (min-width: 700px) {
   .programs {
-    width: 768px;
+    width: 708px;
+    padding: 0 30px;
     margin: 0 auto;
 
     &__wrapper {
@@ -125,12 +126,59 @@
 
     &__item {
       width: 708px;
+      padding: 65px 0;
+      padding-bottom: 60px;
+    }
+
+    &__item:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 37px;
+      margin-left: 51px;
+      margin-bottom: 25px;
     }
 
     &__content {
       border-bottom: none;
       width: 380px;
+      min-height: 96px;
       margin-left: 50px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__link {
+      margin-left: 51px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__link::before {
+      right: -49px;
+    }
+
+    &__img {
+      left: 395px;
+      top: 16px;
+      width: 200px;
+      height: 200px;
+    }
+
+    &__cat--slim::before {
+      width: 203px;
+      height: 193px;
+      top: -11px;
+    }
+
+    &__cat--pro::before {
+      width: 270px;
+      height: 130px;
+      top: 37px;
+      left: -35px;
     }
   }
 }

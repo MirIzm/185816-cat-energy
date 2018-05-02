@@ -44,8 +44,6 @@
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
-    width: 280px;
-    border: none;
     padding: 12px 0;
     cursor: pointer;
     transition: all, 0.3s;
@@ -64,21 +62,52 @@
 
 @media (min-width: 700px) {
   .promo {
+    position: relative;
     width: 708px;
+    min-height: 810px;
     background-image: none;
     padding: 0 30px;
 
     &__wrapper {
-      width: 708px;
+      width: 621px;
       padding: 0;
+      padding-left: 87px;
     }
 
     &__title {
+      position: relative;
+      z-index: 1;
       color: black;
+      text-align: left;
+      margin-top: 55px;
+      margin-bottom: 40px;
+      font-size: 60px;
+      line-height: 60px;
+      width: 427px;
     }
 
     &__description {
+      position: relative;
+      z-index: 1;
       color: black;
+      text-align: left;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 49px;
+    }
+
+    &__image {
+      position: absolute;
+      z-index: 0;
+    }
+
+    &__button {
+      position: relative;
+      z-index: 1;
+      padding: 15px 0;
+      font-size: 20px;
+      line-height: 20px;
+      width: 250px;
     }
   }
 }

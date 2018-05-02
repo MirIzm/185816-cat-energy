@@ -29,6 +29,10 @@
   padding: 8px 0;
 }
 
+.nav-list__active--link {
+  border-bottom: 2px solid #68b738;
+}
+
 .nav-list__link[href]:hover,
 .nav-list__link:focus {
   color: #707070;
@@ -84,17 +88,13 @@
       padding: 25px 0;
       border-top: 1px solid #e6e6e6;
     }
-
-    &__active--link {
-      border-bottom: 2px solid #68b738;
-    }
   }
 }
 
 /*----Tablet version----*/
 @media (min-width: 700px) {
   .main-nav {
-    width: 516px;
+    width: 441px;
     margin-left: auto;
   }
 
@@ -113,7 +113,10 @@
 
     &__item {
       border-top: none;
-      margin-left: 25px;
+    }
+
+    &__item:not(:first-of-type) {
+      margin-left: 35px;
     }
   }
 }
