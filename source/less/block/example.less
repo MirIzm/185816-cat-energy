@@ -148,6 +148,7 @@
     margin: 0 auto;
     padding: 0;
     padding-top: 10px;
+    padding-bottom: 75px;
     background-image: linear-gradient(to bottom, white 57%, #f2f2f2 57%);
 
     &__wrapper {
@@ -201,6 +202,47 @@
       font-family: "Oswald", sans-serif;
       font-size: 20px;
       line-height: 20px;
+    }
+
+    &__fill {
+      position: relative;
+      width: 428px;
+      height: 6px;
+      margin-top: 7px;
+      background-color: #dcdcdc;
+      border: none;
+    }
+
+    &__indicator {
+      display: none;
+    }
+
+    &__button {
+      display: block;
+      position: absolute;
+      font-size: 0;
+      width: 35px;
+      height: 35px;
+      top: -13px;
+      left: 50%;
+      margin-left: -16px;
+      border: 1px solid #d9d9d9;
+      background-color: white;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &__button::before {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      background-color: #68b738;
+      left: 50%;
+      top: 50%;
+      margin-left: -4.5px;
+      margin-top: -4.5px;
+      border-radius: 50%;
     }
   }
 
