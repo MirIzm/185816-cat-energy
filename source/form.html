@@ -33,7 +33,7 @@
     <main class="page-content">
       <section class="main-form">
         <h2 class="main-form__title">Подбор программы</h2>
-        <p class="main-form__description">запоните анкету и мы подберем<br> программу питания для вашего кота</p>
+        <p class="main-form__description">заполните анкету и мы подберем<br> программу питания для вашего кота</p>
         <form class="main-form__list form-list" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-list__worksheet work-list">
             <div class="work-list__wrap-label">
@@ -96,29 +96,33 @@
           </div>
           <div class="form-list__add add-list">
             <h2 class="add-list__title">Дополнительно</h2>
-            <label class="add-list__element">
-              <input class="add-list__checkbox visually-hidden" type="checkbox" name="sweetener" value="sweetener" checked>
-              <span class="add-list__icon">sweetener</span>
-              Сахарозаменитель
-            </label>
-            <label class="add-list__element">
-              <input class="add-list__checkbox visually-hidden" type="checkbox" name="water" value="water">
-              <span class="add-list__icon">water</span>
-              Питьевая вода
-            </label>
-            <label class="add-list__element">
-              <input class="add-list__checkbox visually-hidden" type="checkbox" name="milk" value="milk">
-              <span class="add-list__icon">milk</span>
-              Молоко
-            </label>
-            <label class="add-list__element">
-              <input class="add-list__checkbox visually-hidden" type="checkbox" name="vitamins" value="vitamins">
-              <span class="add-list__icon">vitamins</span>
-              Витамины
-            </label>
+            <div class="add-list__wrap-element">
+              <label class="add-list__element">
+                <input class="add-list__checkbox visually-hidden" type="checkbox" name="sweetener" value="sweetener" checked>
+                <span class="add-list__icon">sweetener</span>
+                Сахарозаменитель
+              </label>
+              <label class="add-list__element">
+                <input class="add-list__checkbox visually-hidden" type="checkbox" name="water" value="water">
+                <span class="add-list__icon">water</span>
+                Питьевая вода
+              </label>
+              <label class="add-list__element">
+                <input class="add-list__checkbox visually-hidden" type="checkbox" name="milk" value="milk">
+                <span class="add-list__icon">milk</span>
+                Молоко
+              </label>
+              <label class="add-list__element">
+                <input class="add-list__checkbox visually-hidden" type="checkbox" name="vitamins" value="vitamins">
+                <span class="add-list__icon">vitamins</span>
+                Витамины
+              </label>
+            </div>
           </div>
-          <button class="form-list__button" type="submit">Отправить заявку</button>
-          <p class="form-list__required">*-Обязательные поля</p>
+          <div class="form-list__wrap-button">
+            <button class="form-list__button" type="submit">Отправить заявку</button>
+            <p class="form-list__required">*&nbsp;&mdash;&nbsp;Обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>
