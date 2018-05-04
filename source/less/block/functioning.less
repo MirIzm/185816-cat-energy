@@ -136,6 +136,9 @@
   .functioning {
     width: 1300px;
     margin: 0 auto;
+    padding-top: 31px;
+    padding-bottom: 23px;
+    min-height: 450px;
 
     &__wrapper {
       width: 1220px;
@@ -150,15 +153,18 @@
     justify-content: space-between;
 
     &__item {
-      width: 285px;
+      width: 245px;
       min-height: 235px;
-      margin-left: 0;
+    }
+
+    &__item:first-of-type {
+      margin-bottom: 0;
     }
 
     &__content {
       display: block;
-      margin-top: 120px;
-      width: 200px;
+      margin-top: 112px;
+      width: 100%;
     }
   }
 }

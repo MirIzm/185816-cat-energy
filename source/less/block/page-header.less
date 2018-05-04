@@ -47,11 +47,16 @@
 /*----Desktop version----*/
 @media (min-width: 1200px) {
   .page-header {
-    width: 1220px;
-    padding: 0 40px;
+    width: 100%;
+    margin-bottom: 80px;
 
     &__wrapper-menu {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      margin-left: -640px;
       width: 1220px;
+      padding-top: 52px;
     }
   }
 }

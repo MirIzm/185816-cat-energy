@@ -115,6 +115,10 @@
       border-top: none;
     }
 
+    &__link {
+      padding: 5px 0;
+    }
+
     &__item:not(:first-of-type) {
       margin-left: 35px;
     }
@@ -123,6 +127,16 @@
 /*----Desktop version----*/
 @media (min-width: 1200px) {
   .main-nav {
+    width: 480px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1px;
     margin-left: auto;
+    background: transparent;
+  }
+
+  .nav-list__link {
+    color: white;
+    border-bottom-color: white;
   }
 }

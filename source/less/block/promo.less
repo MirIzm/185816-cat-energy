@@ -114,23 +114,49 @@
 /*----Desktop version----*/
 @media (min-width: 1200px) {
   .promo {
-    width: 1220px;
-    box-sizing: border-box;
+    width: 100%;
+    min-height: 528px;
+    padding: 0;
+    padding-top: 168px;
+    margin: 0 auto;
 
     &__wrapper {
-      width: 1220px;
+      width: 1300px;
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 0;
     }
 
     &__title {
       width: 414px;
-      margin-left: 80px;
+      margin-left: 120px;
+    }
+
+    &__description {
+      margin-left: 120px;
+      margin-bottom: 53px;
     }
 
     &__button {
-      width: 250px;
+      width: 245px;
+      margin-left: 120px;
+      padding: 16px 0;
     }
+  }
+
+  .promo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    background-color: #65a93c;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 42%;
+    background-position: 25% 0;
   }
 }
