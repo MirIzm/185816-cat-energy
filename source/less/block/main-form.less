@@ -581,10 +581,24 @@
   .main-form {
     width: 1220px;
     padding: 0 40px;
+    padding-bottom: 63px;
 
     &__title {
       width: 1220px;
+      padding-left: 0;
       border: none;
+    }
+
+    &__description {
+      margin-left: 0;
+      margin-bottom: 67px;
+    }
+
+    &__wrap-programs {
+      width: 1220px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
     }
   }
 
@@ -596,11 +610,21 @@
       width: 1220px;
       padding: 0;
     }
+
+    &__wrap-button {
+      justify-content: flex-start;
+    }
+
+    &__button {
+      width: 570px;
+      margin-right: 80px;
+    }
   }
 
   .work-list {
-    width: 1220px;
+    width: 570px;
     padding: 0;
+    margin-bottom: 0;
 
     &__description {
       width: 100%;
@@ -608,22 +632,97 @@
   }
 
   .program-list {
-    width: 1220px;
-    padding: 0;
+    width: 570px;
+    min-height: 90px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 33px;
+
+    &__element {
+      margin-left: 87px;
+    }
   }
 
   .contact-list {
     width: 1220px;
     padding: 0;
+    padding-top: 42px;
+    margin-bottom: 48px;
+
+    &__title {
+      margin: 0;
+      margin-bottom: 75px;
+    }
+
+    &__title::before {
+      width: 776px;
+      right: -110px;
+    }
+
+    &__title::after {
+      width: 70px;
+      left: -110px;
+    }
+
+    &__wrap {
+      width: 1220px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__email,
+    &__number {
+      width: 570px;
+    }
   }
 
   .comment-list {
     width: 1220px;
     padding: 0;
+
+    &__content {
+      width: 1185px;
+      padding-left: 19px;
+    }
+
+    &__title::before {
+      width: 1112px;
+      right: -110px;
+    }
+
+    &__title::after {
+      width: 70px;
+      left: -110px;
+    }
   }
 
   .add-list {
     width: 1220px;
     padding: 0;
+    margin-bottom: 19px;
+
+    &__title {
+      margin-bottom: 68px;
+    }
+
+    &__title::before {
+      width: 1080px;
+      right: -110px;
+    }
+
+    &__title::after {
+      width: 70px;
+      left: -110px;
+    }
+
+    &__wrap-element {
+      padding-right: 25px;
+    }
+
+    &__element {
+      margin-right: 10px;
+      width: 152px;
+    }
   }
 }
