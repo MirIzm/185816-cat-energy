@@ -135,6 +135,7 @@
       border: none;
     }
 
+
     &__title::before {
       position: absolute;
       content: "";
@@ -184,6 +185,9 @@
     &__item:last-of-type {
       border-bottom: 1px solid #d9d9d9;
     }
+    &__item:first-of-type {
+      border-top: 1px solid #d9d9d9;
+    }
 
     &__title {
       font-size: 20px;
@@ -220,6 +224,8 @@
 @media (min-width: 1200px) {
   .addition-product {
     width: 1300px;
+    box-sizing: border-box;
+    padding-bottom: 40px;
 
     &__title {
       width: 1220px;
@@ -227,22 +233,37 @@
       margin: 0 auto;
     }
 
+    &__title::before {
+      width: 956px;
+      right: -70px;
+      top: 63px;
+    }
+
+    &__title::after {
+      top: 62px;
+      width: 70px;
+    }
+
     &__list {
-      width: 1220px;
-      padding: 40px;
+      width: 936px;
+      padding-right: 40px;
+      padding-bottom: 40px;
       margin: 0 auto;
     }
 
     &__bounty {
-      width: 245px;
       display: block;
+      width: 245px;
+      margin: 0;
+      min-height: 288px;
     }
 
     &__wrap {
+      display: flex;
+      align-items: flex-start;
       width: 1220px;
       margin: 0 auto;
-      display: flex;
-      align-items: center;
+      padding-top: 40px;
     }
   }
 
@@ -251,14 +272,47 @@
       width: 895px;
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
+      padding-top: 15px;
+      padding-bottom: 16px;
+      padding-left: 0;
+      padding-right: 0;
+      border-left: none;
+      border-right: none;
+    }
+
+    &__item:first-of-type {
+      border-top: 1px solid #d9d9d9;
+    }
+
+    &__title {
+      margin-bottom: 0;
+      width: 300px;
+    }
+
+    &__value {
+      width: 292px;
+      margin-bottom: 0;
+      margin-top: 4px;
+      margin-left: 23px;
     }
 
     &__button {
-      width: 245px;
-      padding: 0 50px;
-      height: 40px;
+      width: 146px;
+      padding: 10px 50px;
       margin: 0;
       margin-left: auto;
     }
+  }
+
+  .bounty-element__content {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 185px;
+  }
+
+  .bounty-element__icon {
+    left: 95px;
   }
 }
