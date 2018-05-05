@@ -269,9 +269,12 @@
 /*----Tablet version----*/
 @media (min-width: 1200px) {
   .example {
+    position: relative;
     width: 1300px;
-    min-height: 588px;
+    min-height: 590px;
     background-image: linear-gradient(to bottom, white 55%, #f2f2f2 55%);
+    border-top: none;
+    padding-bottom: 0;
 
     &__wrapper {
       width: 1220px;
@@ -286,13 +289,41 @@
       width: 450px;
     }
 
+    &__summ {
+      width: 367px;
+      text-align: left;
+      margin-top: 20px;
+    }
+
     &__live-wrapper {
+      position: absolute;
+      top: 0;
+      right: 20px;
       min-height: 50px;
     }
 
+    &__results-wrapper {
+      flex-direction: column;
+    }
+
     &__results-wrapper-desk {
+      padding-top: 15px;
       display: flex;
       align-items: center;
     }
+
+    &__slider {
+      margin-left: 275px;
+      margin-top: 157px;
+      width: 600px;
+    }
+  }
+
+  .results-list__description {
+    background-color: #f2f2f2;
+  }
+
+  .slider-elem__after {
+    padding-right: 0;
   }
 }
