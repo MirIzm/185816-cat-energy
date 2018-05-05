@@ -8,8 +8,8 @@
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
-    padding: 30px 0;
-    padding-left: 20px;
+    padding-top: 29px;
+    padding-bottom: 32px;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -19,9 +19,10 @@
   }
 
   &__bounty {
+    position: relative;
     display: block;
     width: 280px;
-    min-height: 290px;
+    min-height: 287px;
     margin: 0 auto;
     padding-top: 1px;
     margin-bottom: 35px;
@@ -36,8 +37,7 @@
 
   &__item {
     width: 280px;
-    min-height: 130px;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 17px;
     border-bottom: 1px solid #858585;
   }
@@ -46,6 +46,9 @@
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
   }
 
   &__value {
@@ -55,6 +58,7 @@
     line-height: 14px;
     color: #858585;
     margin-bottom: 13px;
+    border-collapse: collapse;
   }
 
   &__button {
@@ -63,14 +67,29 @@
     margin: 0 auto;
     background-color: #68b738;
     color: white;
-    padding: 12px 0;
+    padding: 10px 0;
     font-family: inherit;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
+    transition: all, 0.3s;
   }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: #5eaa2f;
+  }
+
+  &__button:active {
+    background-color: #5eaa2f;
+    color: #8fc46e;
+  }
+}
+
+.value-list__name:last-of-type {
+  text-align: right;
 }
 
 .bounty-element {
@@ -79,13 +98,23 @@
 
   &__content {
     margin: 0 auto;
-    margin-top: 180px;
+    margin-top: 185px;
     color: white;
     width: 164px;
     font-family: "Arial", sans-serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 20px;
     text-align: center;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 56px;
+    height: 64px;
+    top: 65px;
+    left: 50%;
+    margin-left: -28px;
+    background-image: url("../img/icon-gift.svg");
   }
 }
 
@@ -96,8 +125,35 @@
     margin: 0 auto;
 
     &__title {
-      width: 708px;
+      position: relative;
+      width: 640px;
       margin: 0 auto;
+      margin-left: 68px;
+      margin-bottom: 48px;
+      font-size: 36px;
+      line-height: 36px;
+      border: none;
+    }
+
+
+    &__title::before {
+      position: absolute;
+      content: "";
+      width: 328px;
+      height: 3px;
+      background-color: #68b738;
+      right: -60px;
+      top: 50px;
+    }
+
+    &__title::after {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+      left: -70px;
+      top: 50px;
     }
 
     &__list {
@@ -108,19 +164,59 @@
     &__bounty {
       width: 708px;
       margin: 0 auto;
+      margin-top: 67px;
+      margin-bottom: 76px;
+      min-height: 199px;
     }
   }
 
   .addition-list {
     &__item {
-      width: 708px;
+      width: 632px;
+      padding: 27px 38px;
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
+      border-bottom: 1px solid #d9d9d9;
+      border-left: 1px solid #d9d9d9;
+      border-right: 1px solid #d9d9d9;
+    }
+
+    &__item:last-of-type {
+      border-bottom: 1px solid #d9d9d9;
+    }
+
+    &__item:first-of-type {
+      border-top: 1px solid #d9d9d9;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__value {
+      font-size: 16px;
+      line-height: 20px;
+      width: 230px;
     }
 
     &__button {
-      width: 608px;
-      padding: 0 50px;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  .bounty-element {
+    &__content {
+      margin-top: 70px;
+      margin-left: 424px;
+      text-align: left;
+    }
+
+    &__icon {
+      left: 90px;
+      margin-left: 0;
     }
   }
 }
@@ -129,6 +225,8 @@
 @media (min-width: 1200px) {
   .addition-product {
     width: 1300px;
+    box-sizing: border-box;
+    padding-bottom: 40px;
 
     &__title {
       width: 1220px;
@@ -136,22 +234,37 @@
       margin: 0 auto;
     }
 
+    &__title::before {
+      width: 956px;
+      right: -70px;
+      top: 63px;
+    }
+
+    &__title::after {
+      top: 62px;
+      width: 70px;
+    }
+
     &__list {
-      width: 1220px;
-      padding: 40px;
+      width: 936px;
+      padding-right: 40px;
+      padding-bottom: 40px;
       margin: 0 auto;
     }
 
     &__bounty {
-      width: 245px;
       display: block;
+      width: 245px;
+      margin: 0;
+      min-height: 288px;
     }
 
     &__wrap {
+      display: flex;
+      align-items: flex-start;
       width: 1220px;
       margin: 0 auto;
-      display: flex;
-      align-items: center;
+      padding-top: 40px;
     }
   }
 
@@ -160,14 +273,47 @@
       width: 895px;
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
+      padding-top: 15px;
+      padding-bottom: 16px;
+      padding-left: 0;
+      padding-right: 0;
+      border-left: none;
+      border-right: none;
+    }
+
+    &__item:first-of-type {
+      border-top: 1px solid #d9d9d9;
+    }
+
+    &__title {
+      margin-bottom: 0;
+      width: 300px;
+    }
+
+    &__value {
+      width: 292px;
+      margin-bottom: 0;
+      margin-top: 4px;
+      margin-left: 23px;
     }
 
     &__button {
-      width: 245px;
-      padding: 0 50px;
-      height: 40px;
+      width: 146px;
+      padding: 10px 50px;
       margin: 0;
       margin-left: auto;
     }
+  }
+
+  .bounty-element__content {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 185px;
+  }
+
+  .bounty-element__icon {
+    left: 95px;
   }
 }

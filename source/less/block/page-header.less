@@ -4,12 +4,24 @@
   margin: 0 auto;
 
   &__logo {
+    display: block;
     width: 192px;
-    height: 60px;
+    padding-left: 18px;
+    transition: all, 0.3s;
+  }
+
+  &__logo:hover,
+  &__logo:focus {
+    opacity: 0.7;
+  }
+
+  &__logo:active {
+    opacity: 0.5;
   }
 
   &__wrapper-menu {
-    width: 280px;
+    width: 320px;
+    min-height: 65px;
   }
 }
 /*----Tablet version----*/
@@ -23,8 +35,11 @@
 
     &__wrapper-menu {
       width: 708px;
-      padding: 30px;
+      padding: 0 30px;
+      padding-top: 22px;
       display: flex;
+      flex-wrap: wrap;
+      align-items: center;
       justify-content: space-between;
     }
   }
@@ -32,11 +47,28 @@
 /*----Desktop version----*/
 @media (min-width: 1200px) {
   .page-header {
-    width: 1220px;
-    padding: 0 40px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 70px;
 
     &__wrapper-menu {
       width: 1220px;
+      padding-top: 52px;
+      margin: 0 auto;
     }
+  }
+
+  .page-header__only--desktop::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    background-color: #7abe51;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
   }
 }

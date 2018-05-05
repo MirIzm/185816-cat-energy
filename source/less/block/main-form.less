@@ -5,10 +5,19 @@
     font-size: 36px;
     line-height: 60px;
     font-weight: 400;
-    padding: 0 20px;
+    padding: 13px 20px;
     margin: 0;
     width: 280px;
     border-top: 1px solid #d9d9d9;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 39px;
+    margin-left: 20px;
   }
 
   &__list {
@@ -24,13 +33,26 @@
     width: 280px;
     background-color: #68b738;
     color: white;
-    padding: 12px 0;
+    padding: 10px 0;
     margin: 0 auto;
     font-family: inherit;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
+    margin-bottom: 22px;
+    transition: all, 0.3s;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: #5eaa2f;
+  }
+
+  &__button:active {
+    background-color: #5eaa2f;
+    color: #8fc46e;
   }
 
   &__required {
@@ -40,24 +62,20 @@
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
+    margin-bottom: 32px;
   }
 }
 
 .work-list {
   width: 280px;
   padding: 0 20px;
-
-  &__description {
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
+  padding-bottom: 10px;
 
   &__label {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    margin-right: 12px;
   }
 
   &__weight,
@@ -68,42 +86,97 @@
     line-height: 18px;
     font-weight: 400;
     text-transform: uppercase;
+    padding: 12px 16px;
+    width: 80px;
+    flex-grow: 1;
+  }
+
+  &__wrap-label {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
   }
 }
 
 .program-list {
   width: 280px;
   padding: 0 20px;
+  padding-top: 25px;
+  padding-bottom: 5px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  min-height: 160px;
 
   &__element {
     display: block;
+    position: relative;
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
     font-weight: 400;
+    margin-bottom: 24px;
+    margin-left: 45px;
+  }
+
+  &__item + &__icon {
+    position: absolute;
+    left: -45px;
+    top: -6px;
+    font-size: 0;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #858585;
+    border-radius: 50%;
+  }
+
+  &__item:checked + &__icon::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #68b738;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
   }
 }
 
 .contact-list {
   width: 280px;
   padding: 0 20px;
+  margin-bottom: 27px;
 
   &__title {
+    display: block;
+    position: relative;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
+    padding-top: 7px;
+    margin-bottom: 35px;
   }
 
-  &__email-wrapper,
-  &__number-wrapper {
-    display: block;
+  &__title::before {
+    position: absolute;
+    content: "";
+    right: -20px;
+    top: 21px;
+    width: 99px;
+    height: 3px;
+    background-color: #68b738;
+  }
+
+  &__email,
+  &__number {
+    position: relative;
+    display: flex;
+    align-items: center;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
     text-transform: uppercase;
+    margin-bottom: 15px;
   }
 
   &__number-enter,
@@ -112,47 +185,126 @@
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
+    width: 140px;
+    flex-grow: 1;
     text-transform: uppercase;
+    padding: 12px 15px;
+    margin-left: 10px;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: 10px;
   }
 }
 
 .comment-list {
   width: 280px;
   padding: 0 20px;
+  margin-bottom: 27px;
 
   &__title {
+    display: block;
+    position: relative;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
+    margin-bottom: 35px;
+  }
+
+  &__title::before {
+    position: absolute;
+    content: "";
+    right: -20px;
+    top: 15px;
+    width: 160px;
+    height: 3px;
+    background-color: #68b738;
   }
 
   &__content {
-    width: 280px;
+    width: 254px;
+    min-height: 122px;
     resize: none;
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
     text-transform: uppercase;
+    padding: 13px 13px;
   }
 }
 
 .add-list {
   width: 280px;
   padding: 0 20px;
+  margin-bottom: 42px;
 
   &__title {
+    display: block;
+    position: relative;
+    margin-bottom: 40px;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
   }
 
+  &__title::before {
+    position: absolute;
+    content: "";
+    right: -20px;
+    top: 14px;
+    width: 135px;
+    height: 3px;
+    background-color: #68b738;
+  }
+
   &__element {
     display: block;
+    position: relative;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
     text-transform: uppercase;
+    margin-left: 45px;
+    margin-bottom: 24px;
+  }
+
+  &__icon {
+    font-size: 0;
+  }
+
+  &__checkbox + &__icon {
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    border: 1px solid #858585;
+    left: -45px;
+    top: -5px;
+  }
+
+  &__checkbox:checked + &__icon::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 3px;
+    width: 10px;
+    height: 2px;
+    background-color: #68b738;
+    transform: rotate(44deg);
+  }
+
+  &__checkbox:checked + &__icon::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 1px;
+    width: 20px;
+    height: 2px;
+    background-color: #68b738;
+    transform: rotate(-44deg);
   }
 }
 
@@ -165,8 +317,18 @@
     &__title {
       width: 708px;
       padding: 0 30px;
-      margin: 0 auto;
+      margin-top: 55px;
+      margin-bottom: 55px;
       border: none;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 67px;
+      margin-left: 70px;
     }
   }
 
@@ -174,34 +336,244 @@
     width: 628px;
     padding: 0 40px;
     margin: 0 auto;
+    padding-bottom: 60px;
 
     &__worksheet {
       width: 628px;
+    }
+
+    &__wrap-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__required {
+      width: 285px;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: left;
+    }
+
+    &__button {
+      margin: 0;
+      font-size: 20px;
+      line-height: 20px;
+      width: 284px;
+      padding: 15px;
     }
   }
 
   .work-list {
     width: 628px;
+    padding: 0;
+    margin-bottom: 70px;
 
-    &__description {
-      width: 100%;
+    &__label {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__name,
+    &__weight,
+    &__age {
+      font-size: 20px;
+      line-height: 20px;
+      margin-left: 8px;
+      padding: 15px;
+    }
+
+    &__wrap-label {
+      margin-bottom: 20px;
     }
   }
 
+
   .program-list {
-    width: 628px;
+    width: 588px;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    padding-top: 35px;
+    padding-bottom: 10px;
+
+    &__element {
+      font-size: 20px;
+      line-height: 20px;
+      margin-left: 65px;
+    }
+
+    &__element:not(:last-of-type) {
+      margin-bottom: 33px;
+    }
+
+    &__item + &__icon {
+      width: 40px;
+      height: 40px;
+      left: -58px;
+      top: -11px;
+      cursor: pointer;
+    }
+
+    &__item:checked + &__icon::before {
+      width: 18px;
+      height: 18px;
+      margin-top: -9px;
+      margin-left: -9px;
+    }
   }
 
   .contact-list {
-    width: 628px;
+    width: 632px;
+    padding: 0;
+    padding-top: 39px;
+    margin-bottom: 65px;
+
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 75px;
+    }
+
+    &__title::before {
+      right: -66px;
+      top: 28px;
+      width: 146px;
+    }
+
+    &__title::after {
+      content: "";
+      position: absolute;
+      left: -70px;
+      top: 28px;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+    }
+
+    &__email {
+      margin-bottom: 20px;
+    }
+
+    &__email,
+    &__number,
+    &__email-enter,
+    &__number-enter {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__email-enter,
+    &__number-enter {
+      margin-left: 18px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 20px;
+    }
+
+    &__icon {
+      right: 17px;
+    }
   }
 
   .comment-list {
     width: 628px;
+    padding: 0;
+    margin-bottom: 65px;
+
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+      padding-bottom: 40px;
+    }
+
+    &__title::before {
+      top: 22px;
+      right: -70px;
+      width: 480px;
+    }
+
+    &__title::after {
+      content: "";
+      position: absolute;
+      left: -70px;
+      top: 22px;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+    }
+
+    &__content {
+      width: 598px;
+      min-height: 142px;
+      font-size: 20px;
+      line-height: 20px;
+      padding: 15px 15px;
+    }
   }
 
   .add-list {
     width: 628px;
+    padding: 0;
+    margin-bottom: 65px;
+
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 65px;
+    }
+
+    &__title::before {
+      top: 22px;
+      right: -70px;
+      width: 447px;
+    }
+
+    &__title::after {
+      content: "";
+      position: absolute;
+      left: -70px;
+      top: 22px;
+      width: 30px;
+      height: 3px;
+      background-color: #68b738;
+    }
+
+    &__wrap-element {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__element {
+      font-size: 20px;
+      line-height: 20px;
+      width: 230px;
+      margin-left: 57px;
+      margin-bottom: 53px;
+    }
+
+    &__element:nth-last-of-type(1),
+    &__element:nth-last-of-type(2) {
+      margin-bottom: 0;
+    }
+
+    &__checkbox + &__icon {
+      width: 38px;
+      height: 38px;
+      top: -10px;
+      left: -56px;
+      cursor: pointer;
+    }
+
+    &__checkbox:checked + &__icon::before {
+      top: 23px;
+      left: 8px;
+    }
+
+    &__checkbox:checked + &__icon::after {
+      top: 19px;
+      right: 5px;
+    }
   }
 }
 /*----Desktop version----*/
@@ -209,10 +581,24 @@
   .main-form {
     width: 1220px;
     padding: 0 40px;
+    padding-bottom: 63px;
 
     &__title {
       width: 1220px;
+      padding-left: 0;
       border: none;
+    }
+
+    &__description {
+      margin-left: 0;
+      margin-bottom: 67px;
+    }
+
+    &__wrap-programs {
+      width: 1220px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
     }
   }
 
@@ -224,11 +610,21 @@
       width: 1220px;
       padding: 0;
     }
+
+    &__wrap-button {
+      justify-content: flex-start;
+    }
+
+    &__button {
+      width: 570px;
+      margin-right: 80px;
+    }
   }
 
   .work-list {
-    width: 1220px;
+    width: 570px;
     padding: 0;
+    margin-bottom: 0;
 
     &__description {
       width: 100%;
@@ -236,22 +632,97 @@
   }
 
   .program-list {
-    width: 1220px;
-    padding: 0;
+    width: 570px;
+    min-height: 90px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 33px;
+
+    &__element {
+      margin-left: 87px;
+    }
   }
 
   .contact-list {
     width: 1220px;
     padding: 0;
+    padding-top: 42px;
+    margin-bottom: 48px;
+
+    &__title {
+      margin: 0;
+      margin-bottom: 75px;
+    }
+
+    &__title::before {
+      width: 776px;
+      right: -110px;
+    }
+
+    &__title::after {
+      width: 70px;
+      left: -110px;
+    }
+
+    &__wrap {
+      width: 1220px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__email,
+    &__number {
+      width: 570px;
+    }
   }
 
   .comment-list {
     width: 1220px;
     padding: 0;
+
+    &__content {
+      width: 1185px;
+      padding-left: 19px;
+    }
+
+    &__title::before {
+      width: 1112px;
+      right: -110px;
+    }
+
+    &__title::after {
+      width: 70px;
+      left: -110px;
+    }
   }
 
   .add-list {
     width: 1220px;
     padding: 0;
+    margin-bottom: 19px;
+
+    &__title {
+      margin-bottom: 68px;
+    }
+
+    &__title::before {
+      width: 1080px;
+      right: -110px;
+    }
+
+    &__title::after {
+      width: 70px;
+      left: -110px;
+    }
+
+    &__wrap-element {
+      padding-right: 25px;
+    }
+
+    &__element {
+      margin-right: 10px;
+      width: 152px;
+    }
   }
 }

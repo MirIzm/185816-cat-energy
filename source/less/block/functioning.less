@@ -1,7 +1,7 @@
 .functioning {
   margin-bottom: 25px;
-  width: 320px;
-  min-height: 420px;
+  width: 280px;
+  padding: 0 20px;
 
   &__wrapper {
     width: 280px;
@@ -10,6 +10,7 @@
   &__title {
     margin: 0;
     padding: 0;
+    margin-bottom: 30px;
     font-family: inherit;
     font-size: 36px;
     line-height: 60px;
@@ -26,7 +27,9 @@
 
 .function-list {
   &__item {
+    position: relative;
     margin-left: 80px;
+    margin-bottom: 26px;
   }
 
   &__content {
@@ -36,36 +39,94 @@
     font-weight: 400;
     color: #444444;
   }
+
+  &__content-icon {
+    position: absolute;
+    left: -80px;
+    top: -2px;
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+  }
+
+  &__icon--sheet {
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &__icon--powder {
+    background-image: url("../img/advantage-powder@1x.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &__icon--food {
+    background-image: url("../img/advantage-dining@1x.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &__icon--time {
+    background-image: url("../img/advantage-clock@1x.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
 }
 
 /*----Tablet version----*/
 @media (min-width: 700px) {
   .functioning {
     width: 768px;
+    min-height: 735px;
     margin: 0 auto;
+    padding: 0;
+    padding-top: 45px;
+    border-bottom: 1px solid #858585;
 
     &__wrapper {
       width: 708px;
       margin: 0 auto;
+    }
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 72px;
     }
   }
 
   .function-list {
     width: 708px;
     display: flex;
+    align-items: start;
     flex-wrap: wrap;
     justify-content: space-between;
 
     &__item {
-      width: 354px;
+      width: 324px;
       min-height: 230px;
       margin-left: 0;
+      margin-bottom: 0;
+    }
+
+    &__item:first-of-type {
+      margin-bottom: 88px;
     }
 
     &__content {
       display: block;
-      margin-top: 120px;
-      width: 200px;
+      margin-top: 112px;
+      width: 258px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__content-icon {
+      left: 0;
+      top: 0;
+      width: 80px;
+      height: 80px;
     }
   }
 }
@@ -75,6 +136,10 @@
   .functioning {
     width: 1300px;
     margin: 0 auto;
+    padding-top: 31px;
+    padding-bottom: 23px;
+    min-height: 450px;
+    border-bottom: none;
 
     &__wrapper {
       width: 1220px;
@@ -89,15 +154,18 @@
     justify-content: space-between;
 
     &__item {
-      width: 285px;
+      width: 245px;
       min-height: 235px;
-      margin-left: 0;
+    }
+
+    &__item:first-of-type {
+      margin-bottom: 0;
     }
 
     &__content {
       display: block;
-      margin-top: 120px;
-      width: 200px;
+      margin-top: 112px;
+      width: 100%;
     }
   }
 }

@@ -2,12 +2,12 @@
   width: 320px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  padding-top: 25px;
+  padding-top: 27px;
 
   &__wrapper {
     width: 280px;
-    min-height: 500px;
     padding: 0 20px;
+    padding-bottom: 20px;
   }
 
   &__title {
@@ -19,6 +19,7 @@
     font-weight: 400;
     margin: 0;
     padding: 0;
+    margin-bottom: 25px;
   }
 
   &__description {
@@ -27,9 +28,15 @@
     font-family: inherit;
     font-size: 14px;
     text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &__image {
+    margin-bottom: 2px;
   }
 
   &__button {
+    display: block;
     background-color: #68b738;
     color: white;
     font-family: inherit;
@@ -37,53 +44,112 @@
     line-height: 18px;
     text-transform: uppercase;
     text-align: center;
-    width: 100%;
-    border: none;
     padding: 12px 0;
     cursor: pointer;
+    transition: all, 0.3s;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    background-color: #5eaa2f;
+  }
+
+  &__button:active {
+    background-color: #5eaa2f;
+    color: #8fc46e;
   }
 }
 
 @media (min-width: 700px) {
   .promo {
+    position: relative;
     width: 708px;
+    min-height: 810px;
     background-image: none;
     padding: 0 30px;
 
     &__wrapper {
-      width: 708px;
+      width: 621px;
       padding: 0;
+      padding-left: 87px;
     }
 
     &__title {
+      position: relative;
+      z-index: 1;
       color: black;
+      text-align: left;
+      margin-top: 55px;
+      margin-bottom: 40px;
+      font-size: 60px;
+      line-height: 60px;
+      width: 427px;
     }
 
     &__description {
+      position: relative;
+      z-index: 1;
       color: black;
+      text-align: left;
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 49px;
+    }
+
+    &__image {
+      position: absolute;
+      z-index: 0;
+    }
+
+    &__button {
+      position: relative;
+      z-index: 1;
+      padding: 15px 0;
+      font-size: 20px;
+      line-height: 20px;
+      width: 250px;
     }
   }
 }
 /*----Desktop version----*/
 @media (min-width: 1200px) {
   .promo {
-    width: 1220px;
-    box-sizing: border-box;
+    width: 100%;
+    min-height: 528px;
+    padding: 0;
+    padding-top: 50px;
+    margin: 0 auto;
 
     &__wrapper {
-      width: 1220px;
+      width: 1300px;
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 0;
     }
 
     &__title {
       width: 414px;
-      margin-left: 80px;
+      margin-left: 120px;
+    }
+
+    &__description {
+      margin-left: 120px;
+      margin-bottom: 53px;
     }
 
     &__button {
-      width: 250px;
+      width: 245px;
+      margin-left: 120px;
+      padding: 16px 0;
+    }
+
+    &__image {
+      width: 405px;
+      height: 446px;
+      left: 50%;
+      margin-left: -223px;
     }
   }
 }
