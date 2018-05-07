@@ -11,7 +11,11 @@
     <header class="page-header  page-header__only--desktop">
       <div class="page-header__wrapper-menu">
         <a class="page-header__logo" href="">
-          <img class="page-header__image" src="img/logo-mobile.svg" width="192" height="62" alt="cat-energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__image" src="img/logo-mobile.svg" width="192" height="62" alt="cat-energy">
+          </picture>
         </a>
         <nav class="main-nav main-nav--open">
           <button class="main-nav__button" type="button">
@@ -42,7 +46,13 @@
             <h2 class="promo__title">Функциональное питание для котов</h2>
             <p class="promo__description">Занялся собой? Займись котом!</p>
           </div>
-          <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Cat energy pro">
+          <div class="promo__image-wrapper">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img class="promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat energy pro">
+            </picture>
+          </div>
           <a class="promo__button">Подобрать программу</a>
         </div>
       </section>
@@ -120,7 +130,11 @@
               <p class="example__summ">Затраты на питание: 15000 руб.</p>
             </div>
             <div class="example__live-wrapper">
-              <img class="example__live-example" src="img/before-mobile@1x.png" width="280" height="240" alt="Кот Борис">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="example__live-example" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот Борис">
+              </picture>
             </div>
             <div class="example__slider slider-elem">
               <button class="slider-elem__before" type="button">Было</button>
