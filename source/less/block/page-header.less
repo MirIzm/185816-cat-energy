@@ -25,7 +25,7 @@
   }
 }
 /*----Tablet version----*/
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .page-header {
     width: 768px;
 
@@ -36,16 +36,20 @@
     &__wrapper-menu {
       width: 708px;
       padding: 0 30px;
-      padding-top: 22px;
+      padding-top: 17px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
     }
+
+    &__logo {
+      padding-left: 6px;
+    }
   }
 }
 /*----Desktop version----*/
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .page-header {
     position: relative;
     width: 100%;
@@ -66,9 +70,13 @@
     bottom: 0;
     left: 50%;
     background-color: #7abe51;
-    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5 dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }

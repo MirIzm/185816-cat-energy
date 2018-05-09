@@ -75,7 +75,7 @@
 }
 
 /*----Tablet version----*/
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .functioning {
     width: 768px;
     min-height: 735px;
@@ -132,7 +132,7 @@
 }
 
 /*----Desktop version----*/
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .functioning {
     width: 1300px;
     margin: 0 auto;
@@ -167,5 +167,28 @@
       margin-top: 112px;
       width: 100%;
     }
+  }
+}
+
+/*----Retina----*/
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .function-list__icon--sheet {
+    background-image: url("../img/advantage-leaf@2x.png");
+    background-size: 70%;
+  }
+
+  .function-list__icon--powder {
+    background-image: url("../img/advantage-powder@2x.png");
+    background-size: 70%;
+  }
+
+  .function-list__icon--food {
+    background-image: url("../img/advantage-dining@2x.png");
+    background-size: 70%;
+  }
+
+  .function-list__icon--time {
+    background-image: url("../img/advantage-clock@2x.png");
+    background-size: 70%;
   }
 }

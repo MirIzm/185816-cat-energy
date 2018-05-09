@@ -1,7 +1,5 @@
 .promo {
   width: 320px;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
   padding-top: 27px;
 
   &__wrapper {
@@ -60,7 +58,21 @@
   }
 }
 
-@media (min-width: 700px) {
+/*----Retina mobile----*/
+@media (max-width: 767px) {
+  .promo {
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+      background-size: 320px 305px;
+    }
+  }
+}
+
+/*----Tablet version----*/
+@media (min-width: 768px) {
   .promo {
     position: relative;
     width: 708px;
@@ -79,7 +91,7 @@
       z-index: 1;
       color: black;
       text-align: left;
-      margin-top: 55px;
+      margin-top: 49px;
       margin-bottom: 40px;
       font-size: 60px;
       line-height: 60px;
@@ -96,9 +108,12 @@
       margin-bottom: 49px;
     }
 
-    &__image {
+    &__image-wrapper {
       position: absolute;
+      width: 708px;
       z-index: 0;
+      left: 29px;
+      top: 200px;
     }
 
     &__button {
@@ -112,7 +127,7 @@
   }
 }
 /*----Desktop version----*/
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .promo {
     width: 100%;
     min-height: 528px;
@@ -131,6 +146,7 @@
 
     &__title {
       width: 414px;
+      margin-top: 55px;
       margin-left: 120px;
     }
 
@@ -145,11 +161,9 @@
       padding: 16px 0;
     }
 
-    &__image {
-      width: 405px;
-      height: 446px;
-      left: 50%;
-      margin-left: -223px;
+    &__image-wrapper {
+      top: 25px;
+      left: 39%;
     }
   }
 }
