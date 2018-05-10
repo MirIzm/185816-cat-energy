@@ -81,8 +81,8 @@
     transition: all, 0.3s;
   }
 
-  &__link-academy:hover &__icon path,
-  &__link-academy:focus &__icon path {
+  &__link-academy:hover &__icon,
+  &__link-academy:focus &__icon {
     fill: #68b738;
   }
 
@@ -90,7 +90,7 @@
     color: #c8c8c8;
   }
 
-  &__link-academy:focus &__icon path {
+  &__link-academy:focus &__icon {
     fill: #c8e0ba;
   }
 
@@ -124,30 +124,46 @@
     width: 20px;
     height: 20px;
     margin: 18px;
-    text-align: center;
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  &__link--vkontakte path {
-    fill: #6b6b6b;
+  &__link {
+    margin-top: 5px;
   }
 
-  &__link--instagramm path {
+  &__link--vkontakte {
     fill: #6b6b6b;
+    width: 22px;
+    height: 22px;
   }
 
-  &__link--facebook path {
+  &__link--instagramm {
     fill: #6b6b6b;
+    width: 22px;
+    height: 22px;
+    margin-left: 3px;
+  }
+
+  &__link--facebook {
+    fill: #6b6b6b;
+    width: 22px;
+    height: 22px;
+    margin-left: 4px;
+    margin-bottom: 4px;
   }
 }
 
-.social-list__link:hover .social-list__link--vkontakte path,
-.social-list__link:focus .social-list__link--vkontakte path,
-.social-list__link:hover .social-list__link--instagramm path,
-.social-list__link:focus .social-list__link--instagramm path,
-.social-list__link:hover .social-list__link--instagramm circle,
-.social-list__link:focus .social-list__link--instagramm circle,
-.social-list__link:hover .social-list__link--facebook path,
-.social-list__link:focus .social-list__link--facebook path {
+.social-list__link:hover .social-list__link--vkontakte,
+.social-list__link:focus .social-list__link--vkontakte,
+.social-list__link:hover .social-list__link--instagramm,
+.social-list__link:focus .social-list__link--instagramm,
+.social-list__link:hover .social-list__link--instagramm,
+.social-list__link:focus .social-list__link--instagramm,
+.social-list__link:hover .social-list__link--facebook,
+.social-list__link:focus .social-list__link--facebook {
   fill: #68b738;
 }
 
@@ -255,6 +271,10 @@
 
     &__item {
       margin: 0;
+      margin-top: 8px;
+      margin-right: -10px;
+      width: 32px;
+      height: 32px;
     }
 
     &__item:not(:first-of-type) {
@@ -264,8 +284,8 @@
     &__link--vkontakte,
     &__link--instagramm,
     &__link--facebook {
-      width: 23px;
-      height: 23px;
+      width: 32px;
+      height: 32px;
     }
   }
 }
@@ -273,9 +293,7 @@
 /*----Desktop version----*/
 @media (min-width: 1300px) {
   .page-footer {
-    //width: 100%;
-    max-width: 1440px;
-    min-width: 1300px;
+    width: 100%;
     position: relative;
 
     &__contacts {
@@ -284,7 +302,7 @@
       padding-top: 65px;
       min-height: 130px;
       position: absolute;
-      top: 101px;
+      top: 96px;
       right: 52.8%;
     }
 
@@ -301,7 +319,7 @@
 
     &__map {
       width: 100%;
-      margin-bottom: 49px;
+      margin-bottom: 45px;
       background-image: url("../img/bg-map-desktop@1x.png");
       background-repeat: no-repeat;
       background-size: cover;
