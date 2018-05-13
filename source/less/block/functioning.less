@@ -105,10 +105,22 @@
     justify-content: space-between;
 
     &__item {
+      position: relative;
       width: 324px;
       min-height: 230px;
       margin-left: 0;
       margin-bottom: 0;
+    }
+
+    &__item-numbers {
+      position: absolute;
+      top: -60px;
+      right: 73px;
+      width: 137px;
+      height: 288px;
+      color: #f2f2f2;
+      font-size: 280px;
+      z-index: -1;
     }
 
     &__item:first-of-type {
