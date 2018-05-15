@@ -6,6 +6,7 @@
   &__logo {
     display: block;
     width: 192px;
+    height: 62px;
     padding-left: 18px;
     transition: all, 0.3s;
   }
@@ -29,6 +30,7 @@
   .page-header {
     width: 768px;
 
+
     &__button {
       display: none;
     }
@@ -44,7 +46,16 @@
     }
 
     &__logo {
-      padding-left: 6px;
+      position: relative;
+      padding-left: 0;
+    }
+
+    &__image {
+      position: absolute;
+      width: 186px;
+      height: 65px;
+      left: -8px;
+      top: -2px;
     }
   }
 }
@@ -59,6 +70,12 @@
       width: 1220px;
       padding-top: 52px;
       margin: 0 auto;
+    }
+
+    &__image {
+      width: 209px;
+      height: 63px;
+      left: -4px;
     }
   }
 
