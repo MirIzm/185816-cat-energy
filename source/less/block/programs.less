@@ -190,6 +190,24 @@
       line-height: 20px;
     }
 
+    &__link::before {
+      right: -44px;
+    }
+
+    &__link::after {
+      right: -55px;
+    }
+
+    &__link:hover::before,
+    &__link:focus::before {
+      right: -53px;
+    }
+
+    &__link:hover::after,
+    &__link:focus::after {
+      right: -62px;
+    }
+
     &__img {
       left: 395px;
       top: 16px;
