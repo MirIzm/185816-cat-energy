@@ -100,10 +100,12 @@
   .main-nav {
     width: 441px;
     margin-left: auto;
-  }
+    min-height: 45px;
+    padding-top: 20px;
 
-  &__button {
-    display: none;
+    &__button {
+      display: none;
+    }
   }
 
   .nav-list {
@@ -117,10 +119,14 @@
 
     &__item {
       border-top: none;
+      min-height: 38px;
+      margin-bottom: 5px;
+      padding-top: 5px;
+      padding-bottom: 6px;
     }
 
     &__link {
-      padding: 5px 0;
+      padding: 8px 0;
     }
 
     &__item:not(:first-of-type) {
@@ -142,5 +148,10 @@
   .nav-list__white--link {
     color: white;
     border-bottom-color: white;
+  }
+
+  .nav-list__item {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }

@@ -1,4 +1,5 @@
-/*! svg4everybody.js v2.1.9 | github.com/jonathantneal/svg4everybody.js */
+/*! svg4everybody v2.1.9 | github.com/jonathantneal/svg4everybody */
+/* stylelint-disable */
 
 function embed(parent, svg, target) {
   // if the target exists

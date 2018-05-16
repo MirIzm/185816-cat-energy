@@ -47,13 +47,13 @@
     line-height: 16px;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     padding: 0;
   }
 
   &__value {
     width: 280px;
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Helvetica", sans-serif;
     font-size: 14px;
     line-height: 14px;
     color: #858585;
@@ -88,6 +88,13 @@
   }
 }
 
+.value-list__item {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .value-list__name:last-of-type {
   text-align: right;
 }
@@ -100,7 +107,7 @@
     margin: 0 auto;
     color: white;
     width: 164px;
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", "Helvetica", sans-serif;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -174,7 +181,7 @@
   .addition-list {
     &__item {
       width: 632px;
-      padding: 26.5px 38px;
+      padding: 27px 38px;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
@@ -206,6 +213,11 @@
       width: 100%;
       margin-top: 10px;
     }
+  }
+
+  .value-list__name:first-of-type {
+    text-align: right;
+    width: 135px;
   }
 
   .bounty-element {
@@ -320,6 +332,10 @@
       margin: 0;
       margin-left: auto;
     }
+  }
+
+  .value-list__name:first-of-type {
+    text-align: left;
   }
 
   .bounty-element__content {

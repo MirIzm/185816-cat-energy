@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/normalize.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
@@ -262,42 +263,42 @@
           <ul class="addition-product__list addition-list">
             <li class="addition-list__item">
               <p class="addition-list__title">Сахарозаменитель</p>
-              <table class="addition-list__value value-list">
-                <tr class="value-list__item">
-                  <td class="value-list__name">1 упаковка (100 г)</td>
-                  <td class="value-list__name">100 Р.</td>
-                </tr>
-              </table>
+              <div class="addition-list__value value-list">
+                <ul class="value-list__item">
+                  <li class="value-list__name">1 упаковка (100 г)</li>
+                  <li class="value-list__name">100 Р.</li>
+                </ul>
+              </div>
               <a class="addition-list__button" href="#">Заказать</a>
             </li>
             <li class="addition-list__item">
               <p class="addition-list__title">Питьевая вода</p>
-              <table class="addition-list__value value-list">
-                <tr class="value-list__item">
-                  <td class="value-list__name">5 литров</td>
-                  <td class="value-list__name">50 Р.</td>
-                </tr>
-              </table>
+              <div class="addition-list__value value-list">
+                <ul class="value-list__item">
+                  <li class="value-list__name">5 литров</li>
+                  <li class="value-list__name">50 Р.</li>
+                </ul>
+              </div>
               <a class="addition-list__button" href="#">Заказать</a>
             </li>
             <li class="addition-list__item">
               <p class="addition-list__title">Молоко</p>
-              <table class="addition-list__value value-list">
-                <tr class="value-list__item">
-                  <td class="value-list__name">1 литр</td>
-                  <td class="value-list__name">100 Р.</td>
-                </tr>
-              </table>
+              <div class="addition-list__value value-list">
+                <ul class="value-list__item">
+                  <li class="value-list__name">1 литр</li>
+                  <li class="value-list__name">100 Р.</li>
+                </ul>
+              </div>
               <a class="addition-list__button" href="#">Заказать</a>
             </li>
             <li class="addition-list__item">
               <p class="addition-list__title">Витамины</p>
-              <table class="addition-list__value value-list">
-                <tr class="value-list__item">
-                  <td class="value-list__name">1 упаковка (30 г)</td>
-                  <td class="value-list__name">300 Р.</td>
-                </tr>
-              </table>
+              <div class="addition-list__value value-list">
+                <ul class="value-list__item">
+                  <li class="value-list__name">1 упаковка (30 г)</li>
+                  <li class="value-list__name">300 Р.</li>
+                </ul>
+              </div>
               <a class="addition-list__button" href="#">Заказать</a>
             </li>
           </ul>
@@ -321,7 +322,7 @@
         <iframe class="page-footer__address-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.299557663316!2d30.323083!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524409036407" style="border:0" allowfullscreen></iframe>
       </div>
       <div class="page-footer__group">
-        <a class="page-footer__logo-name" href="#">
+        <a class="page-footer__logo-name" href="index.html">
           <img src="img/logo-footer.svg" alt="Cat-energy" width="132" height="30">
         </a>
         <ul class="page-footer__social social-list">
@@ -348,7 +349,7 @@
           </li>
         </ul>
         <div class="page-footer__development">
-          <a class="page-footer__link-academy" href="https://up.htmlacademy.ru/adaptive/14" aria-label="HTML Academy">HTML Academy
+          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML Academy
             <svg class="page-footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="40" height="56">
               <use xlink:href="img/sprite-svg.svg#icon-HTML-Academy"></use>
             </svg>
@@ -356,9 +357,9 @@
         </div>
       </div>
     </footer>
-    <script src="js/picturefill.js"></script>
-    <script src="js/svg4everybody.min.js"></script>
-    <script src="js/svgxuse.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/picturefill-min.js"></script>
+    <script src="js/svgfoureverybody-min.js"></script>
+    <script src="js/svgxuse-min.js"></script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>
