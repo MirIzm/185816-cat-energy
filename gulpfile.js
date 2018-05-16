@@ -10,6 +10,7 @@ var cssmin = require("gulp-cssmin");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var del = require("del");
@@ -45,6 +46,13 @@ gulp.task("minjs", function (){
     .pipe(uglify())
     .pipe(rename({suffix:"-min"}))
     .pipe(gulp.dest("build/js"));
+});
+
+gulp.task("htmlmin", function (){
+  return gulp.src("build/*.html")
+    .pipe(htmlmin())
+    .pipe(rename({suffix:"-min"}))
+    .pipe(gulp.dest("build/"));
 });
 
 gulp.task("images", function () {
@@ -102,6 +110,7 @@ gulp.task("build", function (done){
     "html",
     "cssmin",
     "minjs",
+    "htmlmin",
     done
   );
 });
