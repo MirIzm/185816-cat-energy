@@ -10,6 +10,7 @@ var cssmin = require("gulp-cssmin");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-htmlmin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var del = require("del");
