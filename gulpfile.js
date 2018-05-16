@@ -28,10 +28,16 @@ gulp.task("style", function() {
     .pipe(server.stream());
   });
 
+gulp.task("normalize", function() {
+  gulp.src("source/less/normalize.less")
+    .pipe(less())
+    .pipe(gulp.dest("build/css"))
+  });
+
 gulp.task("cssmin", function () {
   return gulp.src("build/css/*.css")
     .pipe(cssmin())
-    .pipe(rename({suffix:".min"}))
+    .pipe(rename({suffix:"-min"}))
     .pipe(gulp.dest("build/css"));
 });
 
@@ -85,6 +91,7 @@ gulp.task("build", function (done){
     "clean",
     "copy",
     "style",
+    "normalize",
     "sprite",
     "html",
     "cssmin",
