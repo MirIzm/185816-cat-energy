@@ -5,6 +5,7 @@
  * @version   1.2.6
  */
 /*jslint browser: true */
+/* stylelint-disable */
 /*global XDomainRequest, MutationObserver, window */
 (function () {
   "use strict";
@@ -228,19 +229,3 @@
     }
   }
 }());
-
-    © 2018 GitHub, Inc.
-  Terms
-Privacy
-Security
-Status
-Help
-
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
-
-Press h to open a hovercard with more details.
