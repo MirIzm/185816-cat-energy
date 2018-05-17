@@ -50,7 +50,6 @@ gulp.task("minjs", function (){
 gulp.task("htmlmin", function (){
   return gulp.src("build/*.html")
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(rename({suffix:"-min"}))
     .pipe(gulp.dest("build/"));
 });
 
