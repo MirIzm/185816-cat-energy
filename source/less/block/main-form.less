@@ -172,19 +172,21 @@
   margin-bottom: 27px;
 
   &__title {
-    display: block;
+    display: flex;
+    width: 200px;
     position: relative;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
     padding-top: 7px;
     margin-bottom: 35px;
+    margin-right: auto;
   }
 
   &__title::before {
     position: absolute;
     content: "";
-    right: -20px;
+    left: 200px;
     top: 21px;
     width: 99px;
     height: 3px;
@@ -247,18 +249,20 @@
   margin-bottom: 27px;
 
   &__title {
-    display: block;
+    display: flex;
     position: relative;
+    width: 150px;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
     margin-bottom: 35px;
+    margin-right: auto;
   }
 
   &__title::before {
     position: absolute;
     content: "";
-    right: -20px;
+    left: 140px;
     top: 15px;
     width: 160px;
     height: 3px;
@@ -290,18 +294,20 @@
   margin-bottom: 42px;
 
   &__title {
-    display: block;
+    display: flex;
     position: relative;
-    margin-bottom: 40px;
+    width: 150px;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
+    margin-bottom: 40px;
+    margin-right: auto;
   }
 
   &__title::before {
     position: absolute;
     content: "";
-    right: -20px;
+    left: 165px;
     top: 14px;
     width: 135px;
     height: 3px;
@@ -482,13 +488,14 @@
     margin-bottom: 65px;
 
     &__title {
+      width: 520px;
       font-size: 36px;
       line-height: 36px;
       margin-bottom: 77px;
     }
 
     &__title::before {
-      right: -66px;
+      left: 552px;
       top: 28px;
       width: 146px;
     }
@@ -536,6 +543,7 @@
     margin-bottom: 65px;
 
     &__title {
+      width: 220px;
       font-size: 36px;
       line-height: 36px;
       padding-bottom: 40px;
@@ -543,7 +551,7 @@
 
     &__title::before {
       top: 22px;
-      right: -70px;
+      left: 218px;
       width: 480px;
     }
 
@@ -572,6 +580,7 @@
     margin-bottom: 65px;
 
     &__title {
+      width: 250px;
       font-size: 36px;
       line-height: 36px;
       margin-bottom: 65px;
@@ -579,7 +588,7 @@
 
     &__title::before {
       top: 22px;
-      right: -70px;
+      left: 251px;
       width: 447px;
     }
 
@@ -712,7 +721,7 @@
 
     &__title::before {
       width: 707px;
-      right: -40px;
+      left: 553px;
     }
 
     &__title::after {
@@ -744,7 +753,7 @@
 
     &__title::before {
       width: 1038px;
-      right: -40px;
+      left: 222px;
     }
 
     &__title::after {
@@ -764,7 +773,7 @@
 
     &__title::before {
       width: 1005px;
-      right: -40px;
+      left: 255px;
     }
 
     &__title::after {
@@ -786,16 +795,16 @@
 @media (min-width: 1440px) {
   .contact-list__title::before {
     width: 776px;
-    right: -110px;
+    left: 554px;
   }
 
   .comment-list__title::before {
     width: 1112px;
-    right: -110px;
+    left: 218px;
   }
 
   .add-list__title::before {
     width: 1080px;
-    right: -110px;
+    left: 250px;
   }
 }

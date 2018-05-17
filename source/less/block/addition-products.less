@@ -102,6 +102,7 @@
 .bounty-element {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   text-decoration: none;
+  background-color: #68b738;
 
   &__content {
     margin: 0 auto;
@@ -134,10 +135,12 @@
 
     &__title {
       position: relative;
-      width: 640px;
-      margin: 0 auto;
+      display: flex;
+      width: 350px;
+      margin: 0;
       margin-left: 68px;
       margin-bottom: 48px;
+      margin-right: auto;
       font-size: 36px;
       line-height: 36px;
       border: none;
@@ -150,7 +153,7 @@
       width: 328px;
       height: 3px;
       background-color: #68b738;
-      right: -60px;
+      left: 372px;
       top: 50px;
     }
 
@@ -250,14 +253,15 @@
     padding-bottom: 40px;
 
     &__title {
-      width: 1220px;
+      width: 350px;
       padding: 40px;
-      margin: 0 auto;
+      margin: 0;
+      margin-right: auto;
     }
 
     &__title::before {
-      width: 879px;
-      right: 0;
+      width: 890px;
+      left: 410px;
       top: 63px;
     }
 
@@ -354,6 +358,6 @@
 @media (min-width: 1440px) {
   .addition-product__title::before {
     width: 946px;
-    right: -70px;
+    left: 423px;
   }
 }
