@@ -103,6 +103,7 @@ gulp.task("build", function (done){
     "sprite",
     "cssmin",
     "minjs",
+    "htmlmin",
     done
   );
 });
